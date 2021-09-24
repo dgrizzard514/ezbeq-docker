@@ -1,4 +1,4 @@
-![Build Status](https://github.com/jmery/ezbeq-docker/actions/workflows/main.yml/badge.svg)
+![Build Status](https://github.com/dgrizzard514/ezbeq-docker/actions/workflows/main.yml/badge.svg)
 
 # Running ezBEQ in Docker on Linux or Synology Diskstation
 
@@ -42,7 +42,7 @@ Run to lauch the container.  Replace BUS_NUMBER, DEVICE_NUMBER, and CONTAINER_NA
 
 ## Synology NAS Instructions
  
-You will need to have the container image above published on hub.docker.com in order to use it on the Synology NAS device.  It is best to build and pull your own image.  As an alternative, you can pull `jmery/ezbeq-docker`.  It is provided as-is.
+You will need to have the container image above published on hub.docker.com in order to use it on the Synology NAS device.  It is best to build and pull your own image.  As an alternative, you can pull `dgrizzard514/ezbeq-docker`.  It is provided as-is.
 
 If these instructions don't provide enough detail, should you really be doing/attempting this?
 
