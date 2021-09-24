@@ -50,7 +50,7 @@ If these instructions don't provide enough detail, should you really be doing/at
 1. Using "Package Center" on the Synology NAS, install the official "Docker" package.
 2. After install, open the Docker app and select "Registry"
    ![Registry](./images/registry.jpg "Registry")
-3. Search for your container in the registry, look for dgrizzard514/ezbeq-docker this contains the latest ezbeq software version
+3. Search for your container in the registry, look for `dgrizzard514/ezbeq-docker` this contains the latest ezbeq software version
 4. After finding the container, select "Download" to pull the container down
     * If the image has multiple tags, select the appropriate version combination you want to use.  Otherwise, just choose "latest"
 5. In the Docker app UI, select "Image"
