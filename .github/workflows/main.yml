@@ -6,9 +6,9 @@ name: Build and Push to Docker Hub
 on:
   # Triggers the workflow on push to all branches or pull request to main
   push:
-    branches: [ '!main' ]
+    branches: [ '!beta' ]
   pull_request:
-    branches: [ main ]
+    branches: [ beta ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -55,7 +55,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ github.event.repository.name }}
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ github.event.repository.name }}:beta
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
 
