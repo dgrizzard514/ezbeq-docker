@@ -15,5 +15,4 @@ RUN apt install /tmp/minidsp_${MDSPRSV}_amd64.deb && rm /tmp/minidsp_${MDSPRSV}_
 
 RUN pip install ezbeq==${EZBEQV}
 
-CMD ["systemctl enable minidsp.service"]
-CMD ["systemctl start minidsp.service"]
+CMD ["./minidspd"]
