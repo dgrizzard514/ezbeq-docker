@@ -2,7 +2,7 @@
 
 FROM ubuntu:21.04
 ENV MDSPRSV=0.1.3
-ENV EZBEQV=0.10.7
+ENV EZBEQV=0.11.1
 WORKDIR /tmp
 
 RUN apt-get update \
@@ -15,4 +15,4 @@ RUN apt install /tmp/minidsp_${MDSPRSV}_amd64.deb && rm /tmp/minidsp_${MDSPRSV}_
 
 RUN pip install ezbeq==${EZBEQV}
 
-CMD ["ezbeq"]
+CMD ["minidsp"]
